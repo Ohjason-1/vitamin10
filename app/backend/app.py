@@ -4,9 +4,8 @@ from flask_cors import CORS
 import random
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)  
 
-# A list of quotes
 quotes = [
     "Believe you can and you're halfway there.",
     "Do not watch the clock. Do what it does. Keep going.",

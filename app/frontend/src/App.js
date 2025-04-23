@@ -1,4 +1,3 @@
-// App.js for the React frontend
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
@@ -9,7 +8,6 @@ function App() {
   const fetchQuote = async () => {
     setLoading(true);
     try {
-      // This URL will need to be updated to your deployed backend URL
       const response = await fetch('http://127.0.0.1:5000/api/quote');
       const data = await response.json();
       setQuote(data.quote);
